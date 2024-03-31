@@ -21,6 +21,11 @@ const createWindow = () => {
     console.log("down");
     win.webContents.send("down");
   });
+  globalShortcut.register("CommandOrControl+Up", () => {
+    console.log("Up");
+    win.webContents.send("up");
+  });
+
 };
 
 app.whenReady().then(async () => {});
