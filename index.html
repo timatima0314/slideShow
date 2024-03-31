@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./main.css" />
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <title>Hello from Electron renderer!</title>
+</head>
+
+<body>
+    <!-- スライダーのコンテナ -->
+    <img class="logo" src="./img/logo.svg"/>
+    <div class="swiper">
+        <!-- 必要に応じたwrapper -->
+        <div class="swiper-wrapper" id='xx'>
+            <!-- スライド -->
+            <div class="swiper-slide"><img class="swiper-slide__img" src='./img/019 _1.svg' /></div>
+            <div class="swiper-slide"><img class="swiper-slide__img" src='./img/019 _2.svg' /></div>
+            <div class="swiper-slide"><p class="swiper-slide__p">Slide 3</p></div>
+            <div class="swiper-slide"><p class="swiper-slide__p">Slide 4</p></div>
+        </div>
+        <!-- 必要に応じてページネーション -->
+        <!-- <div class="swiper-pagination"></div> -->
+        <!-- 必要に応じてナビボタン -->
+        <!-- <div class="swiper-button-prev"></div> -->
+        <!-- <div class="swiper-button-next"></div> -->
+    </div>
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
