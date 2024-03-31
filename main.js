@@ -17,9 +17,9 @@ const createWindow = () => {
   });
   win.webContents.openDevTools({ mode: "detach" });
   win.loadFile("index.html");
-  globalShortcut.register("CommandOrControl+A", () => {
-    console.log("ok");
-    win.webContents.send("butotn-click");
+  globalShortcut.register("CommandOrControl+Down", () => {
+    console.log("down");
+    win.webContents.send("down");
   });
 };
 
